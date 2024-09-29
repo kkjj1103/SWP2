@@ -7,17 +7,17 @@ void setup() {
 
 void loop() {
 
-  digitalWrite(PIN_LED, LOW);
+  digitalWrite(PIN_LED, 1);
   delay(1000);
   
   for(int i = 0; i < 5; i++){
-    digitalWrite(PIN_LED, HIGH); //LED를 끔
+    digitalWrite(PIN_LED, 0); //LED를 끔
     delay(100);
-    digitalWrite(PIN_LED, LOW); //LED를 킴
+    digitalWrite(PIN_LED, 1); //LED를 킴
     delay(100);
   }
 
-  digitalWrite(PIN_LED, HIGH);
+  digitalWrite(PIN_LED, 0);
 
   while(1){
     // infinite loop
